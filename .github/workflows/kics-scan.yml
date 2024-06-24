@@ -17,8 +17,8 @@ jobs:
       - name: run kics Scan
         uses: checkmarx/kics-github-action@v2.1.0
         with:
-          path: 'finlibro-aws-terraform'
+          path: '.'
           output_path: kics-results/
       - name: display kics results
         run: |
-          cat kics-results/results.json
+          cat results.json
